@@ -1,0 +1,222 @@
+html {
+   /* background-color: #1d3046;*/
+   background-color: #132028;
+    box-sizing: border-box;
+   /* background-image: url("bcgr.jpg");
+    background-position: center; */
+    font-family:'Poiret One',cursive;
+    /*'Montserrat',sans-serif;*/
+    color: lightgrey;
+    overflow-wrap: break-word;
+
+}
+a:link{
+   color: lightgray;
+   text-align: center;
+   align-content: center;
+   vertical-align: middle;
+   
+   
+}
+a:visited {
+    color: lightgray;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+}
+.fa {
+    padding: 20px;
+    font-size: 200px;
+    width: 30 px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.container .main,
+.container .sidebar,
+.container .footer {
+    background-color: rgb(40, 47, 54);
+}
+.container {
+    display: grid;
+   
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 1/11vh);
+    min-height: 100vh;
+    grid-gap: 10px;
+
+    border: 2px solid transparent;
+}
+
+.header {
+    grid-area: 2/2/4/8;
+    
+   /* background-color: rgba(30, 30, 30, 1);*/
+    background-image: url("header.jpg");
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+    /*background: rgb(10, 7, 14);
+    background: linear-gradient(49deg, rgba(10, 7, 14, 0) 31%, rgba(10, 6, 5, 1) 31%, rgba(10, 6, 5, 1) 32%);*/
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.main {
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    grid-area: 4/2/10/8;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    grid-gap: 10px;
+    
+
+}
+
+.sidebar {
+   
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    grid-area: 2/8/10/10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.footer {
+    
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    font-size: 12px;
+    grid-area: 10/2/11/10;
+}
+
+
+.header .name {
+  
+    
+    border: 2px solid transparent;
+    text-align: left;
+    /*grid-area: 2/3/3/6;*/
+}
+.name i{
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.header .photo {
+    
+    
+    text-align: center;
+    border: 2px solid transparent;
+   /* grid-area: 2/2/6/3;*/
+    
+}
+.header .photo img {
+   
+    border-radius: 50%;
+    transform: rotate(-15deg);
+
+}
+.main .aboutme {
+    
+    border: 2px solid transparent;
+    padding: 20px;
+    grid-area: 1/1/3/4;
+    
+    
+}
+
+.main .scorpio,
+.main .eagle,
+.main .spaceday {
+    width: 100%;
+    font-size: 50px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    text-align: center;
+    align-items: center;
+  
+
+    
+}
+
+
+
+.main .scorpio{
+   grid-area: 3/1/4/2;
+   
+}
+.main .eagle{
+    grid-area: 3/2/4/3;
+}
+.main .spaceday{
+    grid-area: 3/3/4/4;
+}
+
+.sidebar .fb,
+.sidebar .insta,
+.sidebar .li,
+.sidebar .www {
+    height: 25%;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    color:#2a3238;
+    
+    
+}
+
+.sidebar .fb{
+    grid-area: 1/1/2/2;
+    text-align: center;
+}
+.sidebar .insta{
+     grid-area: 2/1/3/2;
+     text-align: center;
+ }
+.sidebar .li{
+     grid-area: 3/1/4/2;
+     text-align: center;
+}
+.sidebar .www{
+    grid-area: 4/1/5/2;
+    text-align: center;
+}
+
+.btn-grad {
+   background-image: linear-gradient(to right, rgba(40, 47, 54, 0.1) 0%, #32465E 51%, #32465E 100%);
+      
+   padding: 15px 32px;
+      width: 50%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-position: contain;
+
+      align-items: center;
+   
+
+}
+
+
+.btn-grad:hover {
+    background-position: right center;
+}
